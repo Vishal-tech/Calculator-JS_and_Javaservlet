@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="style.css">
+        <script src="calc.js"></script>
+        <title>Calculator</title>
+    </head>
+    <body>
+        <h1>Calculator</h1>
+        <form name="calc" action="http://localhost:8080/Model_prac/calculator" method="GET">
+            <table>
+                <tr>
+                    <th colspan="4">
+                        Simple calculator
+                    </th>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <input name="calc_value" id="calc_value" placeholder="0">
+                    </td>
+    
+                </tr>
+                <tr>
+                    <td>
+                        <input class="but first_row" type="button" name="CE" value="CE" onclick="calc.calc_value.value =''">
+                    </td>
+                    <td>
+                        <input class="but first_row" type="button" name="C" value="C" onclick="clear_char(calc.calc_value.value)">
+                    </td>
+                    <td>
+                        <input class="but first_row" type="button" name="x" value="x">
+                    </td>
+                    <td>
+                        <input class="but last" type="button" name="divide" value="/">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="but" type="button" name="7" value="7" onclick="calc.calc_value.value +=7">
+                    </td>
+                    <td>
+                        <input class="but" type="button" name="8" value="8" onclick="calc.calc_value.value +=8">
+                    </td>
+                    <td>
+                        <input class="but" type="button" name="9" value="9" onclick="calc.calc_value.value +=9">
+                    </td>
+                    <td>
+                        <input class="but last" type="button" name="mul" value="*" onclick="calc.calc_value.value +='*'">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="but" type="button" name="4" value="4" onclick="calc.calc_value.value +=4">
+                    </td>
+                    <td>
+                        <input class="but" type="button" name="5" value="5" onclick="calc.calc_value.value +=5">
+                    </td>
+                    <td>
+                        <input class="but" type="button" name="6" value="6" onclick="calc.calc_value.value +=6">
+                    </td>
+                    <td>
+                        <input class="but last" type="button" name="sub" value="-" onclick="calc.calc_value.value +='-'">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="but" type="button" name="1" value="1" onclick="calc.calc_value.value +=1">
+                    </td>
+                    <td>
+                        <input class="but" type="button" name="2" value="2" onclick="calc.calc_value.value +=2">
+                    </td>
+                    <td>
+                        <input class="but" type="button" name="3" value="3" onclick="calc.calc_value.value +=3">
+                    </td>
+                    <td>
+                        <input class="but last" type="button" name="add" value="+" onclick="calc.calc_value.value +='+'">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="but" type="button" name="add_sub" value="+/-">
+                    </td>
+                    <td>
+                        <input class="but" type="button" name="0" value="0" onclick="calc.calc_value.value +=0">
+                    </td>
+                    <td>
+                        <input class="but" type="button" name="dot" value="." onclick="calc.calc_value.value +='.'">
+                    </td>
+                    <td>
+                        <input id="equal" class="but" type="submit" name="equal" value="=" onclick="calculate(calc.calc_value.value) ">
+                    </td>
+                </tr>
+            </table>
+        </form> 
+    </body>
+</html>

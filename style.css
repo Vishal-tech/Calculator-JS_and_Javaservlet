@@ -1,0 +1,26 @@
+form{
+    display: inline-block;
+    background-color: rgba(185, 185, 185, 0.918);
+}
+
+#calc_value{
+    background-color:rgb(230, 230, 230);
+    border: none;
+}
+
+.but{
+    width:35px;
+    border: none;
+    background-color:white;
+}
+#equal{
+    background-color:lightskyblue;
+}
+
+.last{
+    background-color:rgb(230, 230, 230);
+}
+
+.first_row{
+    background-color:rgb(230, 230, 230);
+}
